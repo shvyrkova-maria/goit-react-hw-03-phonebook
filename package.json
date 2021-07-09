@@ -2,6 +2,11 @@
   "name": "goit-react-hw-03-phonebook",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shvyrkova-maria.github.io/goit-react-hw-03-phonebook",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shvyrkova-maria/goit-react-hw-03-phonebook"
+  },
   "dependencies": {
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
@@ -9,6 +14,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "formik": "^2.2.9",
+    "gh-pages": "^3.2.3",
     "modern-normalize": "^1.1.0",
     "nanoid": "^3.1.23",
     "prop-types": "^15.7.2",
@@ -26,7 +32,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [

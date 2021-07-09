@@ -1,7 +1,6 @@
 import { Component } from 'react';
 import Section from 'components/Section/Section';
-// import ContactsForm from 'components/ContactsForm/ContactsForm';
-import ContactsFormFormik from 'components/ContactsFormFormik/ContactsFormFormik';
+import ContactsForm from 'components/ContactsForm/ContactsForm';
 import ContactsList from 'components/ContactsList/ContactsList';
 import Filter from 'components/Filter/Filter';
 import { Container } from 'components/App/App.styled';
@@ -72,8 +71,7 @@ export default class App extends Component {
     return (
       <Container>
         <Section title="Phonebook">
-          {/* <ContactsForm onSubmit={addContact} /> */}
-          <ContactsFormFormik onSubmit={addContact} />
+          <ContactsForm onSubmit={addContact} />
         </Section>
         <Section title="Contacts">
           <Filter filter={this.state.filter} onChange={getFilterValue} />
